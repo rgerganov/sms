@@ -20,7 +20,7 @@ void read_com()
     DWORD bytesRead = 0;
     ReadFile(hSerial, buf, 512, &bytesRead, NULL);
     if (bytesRead > 0) {
-        printf("Modem returned: %s\n", buf);
+        printf("<< '%s'\n", buf);
     }
 }
 
